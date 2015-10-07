@@ -21,6 +21,15 @@ describe "FizzBuzz" do
     it '5' do
       expect(is_divisible_by_five?(1)).not_to be_truthy
     end
-
+    it '15' do
+      expect(is_divisible_by_fifteen?(1)).not_to be_truthy
+    end
   end
+
+  context 'while playing the game it returns' do
+    it 'the number' do
+      expect(fizzbuzz(1)).to eq 1
+    end
+  end
+
 end
